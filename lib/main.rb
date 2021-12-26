@@ -2,14 +2,16 @@
 
 require_relative 'board'
 require_relative 'knight'
-require_relative 'route'
 
-knight = Knight.new
+def knight_moves(knight, goal = [0, 0], moves = [], min = 10)
+  return false if moves.any?  { |position| knight.pos == position }
 
-p knight
+  p knight
+  moves << knight.pos
+  p moves
 
-knight.r_up
+  return false if moves.length > min
+  return moves if knight.pos == goal
+end
 
-p knight
-
-knight.down_l
+knight_moves(Knight.new([0, 0]), [7, 7])
