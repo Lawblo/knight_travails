@@ -22,7 +22,7 @@ You can think of the board as having 2-dimensional coordinates. Your function wo
 3. Decide which search algorithm is best to use for this case. Hint: one of them could be a potentially infinite series.
 4. Use the chosen search algorithm to find the shortest path between the starting square (or node) and the ending square.
 
-<span styel="color:blue"> Output what that full path looks like, e.g.: <span>
+**Output what that full path looks like, e.g.:**
 
 <pre>
 > knight_moves([3,3],[4,3])
